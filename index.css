@@ -1,0 +1,25 @@
+.wrapper {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+}
+
+article {
+    border: 2px solid black;
+    padding: 5px;
+    text-align: center;
+}
+
+article div {
+    padding: 5px;
+    text-align: center;
+    margin: auto;
+    border: 1px solid darkslategrey;
+    width: 30%;
+}
