@@ -7,4 +7,4 @@ I was able to create this app after studying the [NYTimes API](https://developer
 
 Feel free to clone or download. This is just the client side. There is a server, as it was needed to access the darksky api, the information for it can be found in index.js. You will need node installed globally on your system so you can run `npm init` in command prompt at the root of your project. http-server will then need to be added to the app by running `npm install http-server --save`. 
 
-Or, you can view a deployed version by clicking [HERE](http://weatherapp-kbb.firebaseapp.com).
+Or, you can view a deployed version by clicking [HERE](http://weatherapp-dc.herokuapp.com/?).
