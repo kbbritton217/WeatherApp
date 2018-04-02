@@ -72,6 +72,7 @@ function displayWeatherCurrent(json){
     //----------------------------
     
     article.appendChild(par);
+    let p = document.createElement('p');
     let wBody = document.createElement('div');
     
     wBody.style.margin = 'auto';
@@ -86,23 +87,25 @@ function displayWeatherCurrent(json){
         let para2 = document.createElement('p');
         
         let temp = current.temperature;
-        let miliDay = new Date(current.time).toUTCString();
+        let miliDay = new Date(current.time*1000).toUTCString();
         let description = current.summary;
+        let day = miliDay.slice(0,11);
 
-        let time = miliDay.slice(16,29);;
+        let time = miliDay.slice(16,29);
 
         console.log("temp:", temp);
         console.log("miliDay w:", miliDay);
         console.log("time:", time);
         console.log("description:", description);
 
+        p.textContent = day;
         para.textContent = time;
         para2.textContent = Math.floor(temp) + ' degrees : ' + description;
 
         
         forecast.style.display = 'table-cell';
         
-       
+        article.appendChild(p);
         forecast.appendChild(para);
         forecast.appendChild(para2);
         wBody.appendChild(forecast);
@@ -139,6 +142,7 @@ function displayWeatherSevenDay(json){
     wBody.style.width = '97%';
     wBody.style.display = 'flex';
     
+    
     let s = 0;
 
     for(i = 0; i< 7; i++){
@@ -151,7 +155,7 @@ function displayWeatherSevenDay(json){
 
         let temp = current.temperatureHigh;
         let precip = current.precipProbability;
-        let miliDay = new Date(current.time).toUTCString();
+        let miliDay = new Date(current.time*1000).toUTCString();
         let description = current.summary;
 
         let wdate = miliDay.slice(4,11);
