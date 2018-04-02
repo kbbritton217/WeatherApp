@@ -9,4 +9,3 @@ Feel free to clone or download. This is just the client side. There is a server,
 
 Or, you can view a deployed version by clicking [HERE](http://weatherapp-dc.herokuapp.com/?).
 
-I'm still working out some kinks with the date and time that pull from the darksky api, that is why these seem so weird at the deployed link.
