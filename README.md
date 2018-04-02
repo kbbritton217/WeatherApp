@@ -9,6 +9,6 @@ Feel free to clone or download. This is just the client side. There is a server,
 
 Or, you can view a deployed version by clicking [HERE](http://weatherapp-dc.herokuapp.com/?).
 
->Tip: The Universal Coordinated Time (UTC) is the time set by the World Time >Standard.
+>Tip: The Universal Coordinated Time (UTC) is the time set by the World Time Standard.
 >Note: UTC time is the same as GMT time." 
 from [W3Schools](https://www.w3schools.com/jsref/jsref_gettimezoneoffset.asp).
