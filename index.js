@@ -87,11 +87,15 @@ function displayWeatherCurrent(json){
         let para2 = document.createElement('p');
         
         let temp = current.temperature;
+        //Below: Used to print in EST instead of GMT
+        //let miliDay = new Date((current.time*1000)-14400000).toUTCString();
         let miliDay = new Date(current.time*1000).toUTCString();
         let description = current.summary;
         let day = miliDay.slice(0,11);
 
         let time = miliDay.slice(16,29);
+        //Below: Used to print in EST instead of GMT
+        //let time = miliDay.slice(16,23);
 
         console.log("temp:", temp);
         console.log("miliDay w:", miliDay);
